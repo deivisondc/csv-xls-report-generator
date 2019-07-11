@@ -34,6 +34,6 @@ echo PHP_EOL;
 
 // Generating a XLS Report
 echo "Generating a XLS Report";
-$outputXlsFile = $csvXlsReportGenerator->generateFile('csv', $data, $clientId);
+$outputXlsFile = $csvXlsReportGenerator->generateFile('xls', $data, $clientId);
 echo PHP_EOL;
 echo "Output File: " . $outputXlsFile;
