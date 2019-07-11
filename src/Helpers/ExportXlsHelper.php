@@ -151,10 +151,10 @@ class ExportXlsHelper
      */
     public function generateXlsFile(
         $data,
-        $clientId
+        $clientId,
+        $path
     ) {
-        $baseUrl = ROOT_PATH.'/report/';
-        $fileName = '/tmp/' . date('dmYHis'). '-' . $clientId . '.xls';
+        $fileName = $path . date('dmYHis'). '-' . $clientId . '.xls';
         $this->setFilename($fileName);
         $header = 'Relatório gerado em: ' . date('d-m-Y H:i:s');
         $this->addHeader($header);

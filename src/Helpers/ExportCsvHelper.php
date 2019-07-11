@@ -12,10 +12,10 @@ class ExportCsvHelper
      */
     public function generateCsvFile(
         array $data,
-        string $clientId
+        string $clientId,
+        string $path
     ) {
-        $baseUrl = ROOT_PATH.'/report/';
-        $fileName = '/tmp/' . date('dmYHis'). '-' . $clientId . '.csv';
+        $fileName = $path . date('dmYHis'). '-' . $clientId . '.csv';
         $file = fopen($fileName, 'w');
         foreach ($data[0] as $key => $value) {
             $header[] = $key;

@@ -20,12 +20,13 @@ $data = [
     ]
 ];
 $clientId = '999';
+$path = '/tmp';
 
 $csvXlsReportGenerator = new CsvXlsReportGenerator();
 
 // Generating a CSV Report
 echo "Generating a CSV Report";
-$outputCsvFile = $csvXlsReportGenerator->generateFile('csv', $data, $clientId);
+$outputCsvFile = $csvXlsReportGenerator->generateFile('csv', $data, $clientId, $path);
 echo PHP_EOL;
 echo "Output File: " . $outputCsvFile;
 
@@ -34,6 +35,6 @@ echo PHP_EOL;
 
 // Generating a XLS Report
 echo "Generating a XLS Report";
-$outputXlsFile = $csvXlsReportGenerator->generateFile('xls', $data, $clientId);
+$outputXlsFile = $csvXlsReportGenerator->generateFile('xls', $data, $clientId, $path);
 echo PHP_EOL;
 echo "Output File: " . $outputXlsFile;

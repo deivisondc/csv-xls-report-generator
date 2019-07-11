@@ -25,7 +25,7 @@ class ExportCsvHelperTest extends TestCase
         $clientId = '1';
 
         $helper = new ExportCsvHelper();
-        $file = $helper->generateCsvFile($data, $clientId);
+        $file = $helper->generateCsvFile($data, $clientId, '/tmp/');
         unlink($file);
 
         $this->assertInternalType('string', $file);

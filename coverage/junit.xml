@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="tests/" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="0.003107">
-    <testsuite name="CsvXlsReportGenerator\ExportCsvHelperTest" file="/home/deivison/Code/csv-xls-report-generator/tests/ExportCsvHelperTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.002633">
-      <testcase name="testGenerateCsvFile" class="CsvXlsReportGenerator\ExportCsvHelperTest" classname="CsvXlsReportGenerator.ExportCsvHelperTest" file="/home/deivison/Code/csv-xls-report-generator/tests/ExportCsvHelperTest.php" line="18" assertions="1" time="0.002633"/>
+  <testsuite name="tests" tests="7" assertions="13" errors="0" failures="0" skipped="0" time="0.005094">
+    <testsuite name="CsvXlsReportGenerator\CsvXlsReportGeneratorTest" file="/home/deivison/Code/csv-xls-report-generator/tests/CsvXlsReportGeneratorTest.php" tests="5" assertions="11" errors="0" failures="0" skipped="0" time="0.004837">
+      <testcase name="testGenerateFileInvalidType" class="CsvXlsReportGenerator\CsvXlsReportGeneratorTest" classname="CsvXlsReportGenerator.CsvXlsReportGeneratorTest" file="/home/deivison/Code/csv-xls-report-generator/tests/CsvXlsReportGeneratorTest.php" line="19" assertions="3" time="0.003884"/>
+      <testcase name="testGenerateFileInvalidPath" class="CsvXlsReportGenerator\CsvXlsReportGeneratorTest" classname="CsvXlsReportGenerator.CsvXlsReportGeneratorTest" file="/home/deivison/Code/csv-xls-report-generator/tests/CsvXlsReportGeneratorTest.php" line="30" assertions="3" time="0.000069"/>
+      <testcase name="testGenerateFileInvalidData" class="CsvXlsReportGenerator\CsvXlsReportGeneratorTest" classname="CsvXlsReportGenerator.CsvXlsReportGeneratorTest" file="/home/deivison/Code/csv-xls-report-generator/tests/CsvXlsReportGeneratorTest.php" line="40" assertions="3" time="0.000040"/>
+      <testcase name="testGenerateFileTypeCsv" class="CsvXlsReportGenerator\CsvXlsReportGeneratorTest" classname="CsvXlsReportGenerator.CsvXlsReportGeneratorTest" file="/home/deivison/Code/csv-xls-report-generator/tests/CsvXlsReportGeneratorTest.php" line="50" assertions="1" time="0.000429"/>
+      <testcase name="testGenerateFileTypeXls" class="CsvXlsReportGenerator\CsvXlsReportGeneratorTest" classname="CsvXlsReportGenerator.CsvXlsReportGeneratorTest" file="/home/deivison/Code/csv-xls-report-generator/tests/CsvXlsReportGeneratorTest.php" line="57" assertions="1" time="0.000415"/>
     </testsuite>
-    <testsuite name="CsvXlsReportGenerator\ExportXlsHelperTest" file="/home/deivison/Code/csv-xls-report-generator/tests/ExportXlsHelperTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.000474">
-      <testcase name="testGenerateXlsFile" class="CsvXlsReportGenerator\ExportXlsHelperTest" classname="CsvXlsReportGenerator.ExportXlsHelperTest" file="/home/deivison/Code/csv-xls-report-generator/tests/ExportXlsHelperTest.php" line="28" assertions="1" time="0.000474"/>
+    <testsuite name="CsvXlsReportGenerator\ExportCsvHelperTest" file="/home/deivison/Code/csv-xls-report-generator/tests/ExportCsvHelperTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.000131">
+      <testcase name="testGenerateCsvFile" class="CsvXlsReportGenerator\ExportCsvHelperTest" classname="CsvXlsReportGenerator.ExportCsvHelperTest" file="/home/deivison/Code/csv-xls-report-generator/tests/ExportCsvHelperTest.php" line="18" assertions="1" time="0.000131"/>
+    </testsuite>
+    <testsuite name="CsvXlsReportGenerator\ExportXlsHelperTest" file="/home/deivison/Code/csv-xls-report-generator/tests/ExportXlsHelperTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.000126">
+      <testcase name="testGenerateXlsFile" class="CsvXlsReportGenerator\ExportXlsHelperTest" classname="CsvXlsReportGenerator.ExportXlsHelperTest" file="/home/deivison/Code/csv-xls-report-generator/tests/ExportXlsHelperTest.php" line="28" assertions="1" time="0.000126"/>
     </testsuite>
   </testsuite>
 </testsuites>

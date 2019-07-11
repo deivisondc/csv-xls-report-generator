@@ -37,7 +37,7 @@ class ExportXlsHelperTest extends TestCase
         $clientId = '1';
 
         $helper = new ExportXlsHelper();
-        $file = $helper->generateXlsfile($data, $clientId);
+        $file = $helper->generateXlsfile($data, $clientId, '/tmp/');
         unlink($file);
 
         $this->assertInternalType('string', $file);
