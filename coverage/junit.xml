@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="tests/" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="0.004354">
+    <testsuite name="CsvXlsReportGenerator\ExportCsvHelperTest" file="/home/deivison/Code/libs/xls-csv-generator/tests/ExportCsvHelperTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.003822">
+      <testcase name="testGenerateCsvFile" class="CsvXlsReportGenerator\ExportCsvHelperTest" classname="CsvXlsReportGenerator.ExportCsvHelperTest" file="/home/deivison/Code/libs/xls-csv-generator/tests/ExportCsvHelperTest.php" line="18" assertions="1" time="0.003822"/>
+    </testsuite>
+    <testsuite name="CsvXlsReportGenerator\ExportXlsHelperTest" file="/home/deivison/Code/libs/xls-csv-generator/tests/ExportXlsHelperTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.000532">
+      <testcase name="testGenerateXlsFile" class="CsvXlsReportGenerator\ExportXlsHelperTest" classname="CsvXlsReportGenerator.ExportXlsHelperTest" file="/home/deivison/Code/libs/xls-csv-generator/tests/ExportXlsHelperTest.php" line="28" assertions="1" time="0.000532"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
