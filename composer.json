@@ -1,7 +1,7 @@
 {
     "name": "deivisondc/csv-xls-report-generator",
     "description": "PHP library to generate CSV / XLS reports",
-    "version": "1.1.1",
+    "version": "1.1",
     "type": "library",
     "license": "GPL-3.0-only",
     "authors": [
