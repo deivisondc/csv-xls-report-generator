@@ -1,6 +1,8 @@
 <?php
 
-namespace CsvXlsReportGenerator\Helpers;
+namespace CsvXlsReportGenerator;
+
+use Exception;
 
 class ExportXlsHelper
 {
@@ -154,6 +156,16 @@ class ExportXlsHelper
         $clientId,
         $path
     ) {
+        if (!$path) {
+            throw new Exception('Path is required!', 422);
+        }
+        if (!$data) {
+            throw new Exception('Data should not be empty!', 422);
+        }
+        if (substr($path, -1) != '/') {
+            $path .= '/';
+        }
+
         $fileName = $path . date('dmYHis'). '-' . $clientId . '.xls';
         $this->setFilename($fileName);
         $header = 'Relatório gerado em: ' . date('d-m-Y H:i:s');

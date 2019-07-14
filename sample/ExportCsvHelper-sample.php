@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use CsvXlsReportGenerator\CsvXlsReportGenerator;
+use CsvXlsReportGenerator\ExportCsvHelper;
 
 // Setting up
 $data = [
@@ -22,19 +22,10 @@ $data = [
 $clientId = '999';
 $path = '/tmp';
 
-$csvXlsReportGenerator = new CsvXlsReportGenerator();
+$exportCsvHelper = new ExportCsvHelper();
 
 // Generating a CSV Report
 echo "Generating a CSV Report";
-$outputCsvFile = $csvXlsReportGenerator->generateFile('csv', $data, $clientId, $path);
+$outputCsvFile = $exportCsvHelper->generateCsvFile($data, $clientId, $path);
 echo PHP_EOL;
 echo "Output File: " . $outputCsvFile;
-
-echo PHP_EOL;
-echo PHP_EOL;
-
-// Generating a XLS Report
-echo "Generating a XLS Report";
-$outputXlsFile = $csvXlsReportGenerator->generateFile('xls', $data, $clientId, $path);
-echo PHP_EOL;
-echo "Output File: " . $outputXlsFile;
